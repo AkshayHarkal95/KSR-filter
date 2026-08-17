@@ -759,7 +759,7 @@ section {
   <div class="hero-left">
     <div class="h-badge"><div class="bpulse"></div>⚡ Performance Air Filtration</div>
     <h1 class="h-title">BEYOND<br><span class="r">AIR</span><span class="g">…</span></h1>
-    <p class="h-sub"><strong>Engineered for Performance. Built for Riders.</strong><br>
+    <p class="h-sub"><strong>Engineered for Performance. Built To Last.</strong><br>
     High-flow air filters precision-crafted for Indian motorcycles. More air. More power. Zero compromise.</p>
     <div class="h-actions">
       <a href="#products" class="btn-red">Explore Products</a>
@@ -832,7 +832,6 @@ section {
         <div class="ffi"><div class="ffi-num">01</div><div class="ffi-body"><h4>Triple-Layer Synthetic Media</h4><p>Three layers of precision-woven synthetic fibre capture 99% of particulates while allowing 3x the airflow of OEM paper filters.</p></div></div>
         <div class="ffi"><div class="ffi-num">02</div><div class="ffi-body"><h4>Aerospace-Grade Wire Mesh</h4><p>Stainless steel inner & outer mesh provides structural rigidity even at redline RPMs. No collapse, no failure.</p></div></div>
         <div class="ffi"><div class="ffi-num">03</div><div class="ffi-body"><h4>High-Temp Epoxy Seal</h4><p>End caps bonded with heat-resistant epoxy rated for sustained temperatures up to 200°C in the engine bay.</p></div></div>
-        <div class="ffi"><div class="ffi-num">04</div><div class="ffi-body"><h4>Washable & Reusable Forever</h4><p>Clean with KSR Filter Cleaner, re-oil, reinstall. Designed to last the full lifetime of your motorcycle.</p></div></div>
       </div>
     </div>
   </div>
@@ -851,15 +850,7 @@ section {
     </div>
     <select class="fsel green" id="brandFilter" onchange="filterProducts()">
       <option value="all">All Brands</option>
-      <option value="ktm">KTM</option>
-      <option value="pulsar">Pulsar</option>
-      <option value="apache">Apache</option>
-      <option value="hero">Hero</option>
-      <option value="yamaha">Yamaha</option>
-      <option value="honda">Honda</option>
       <option value="royal-enfield">Royal Enfield</option>
-      <option value="suzuki">Suzuki</option>
-      <option value="bajaj">Bajaj</option>
     </select>
     <select class="fsel orange" id="sortSel" onchange="filterProducts()">
       <option value="default">Sort: Default</option>
@@ -897,8 +888,8 @@ section {
     <div class="step reveal">
       <div class="step-num">02</div>
       <img class="step-img" src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=120&auto=format&fit=crop" alt="Order WhatsApp" onerror="this.style.display='none'"/>
-      <h3>Order on WhatsApp</h3>
-      <p>Click the order button. A pre-filled message goes directly to our team.</p>
+      <h3>Place Order Online</h3>
+      <p>Start your order online and connect with our team.</p>
     </div>
     <div class="step reveal">
       <div class="step-num">03</div>
@@ -994,24 +985,8 @@ section {
 <script>
 /* ── DATA ── */
 const BRANDS = [
-  { id:'ktm',           label:'KTM',           count:5,  color:'#ff2e2e',
-    img:'ktm.png' },
-  { id:'pulsar',        label:'Bajaj Pulsar',   count:5,  color:'#6cff3c',
-    img:'bajaj.png' },
-  { id:'apache',        label:'TVS Apache',     count:3,  color:'#ff8c00',
-    img:'apache.png' },
-  { id:'hero',          label:'Hero MotoCorp',  count:3,  color:'#3a9bff',
-    img:'hero.png' },
-  { id:'yamaha',        label:'Yamaha',         count:3,  color:'#c060ff',
-    img:'yamaha.png' },
-  { id:'honda',         label:'Honda',          count:3,  color:'#ff8040',
-    img:'honda.png' },
   { id:'royal-enfield', label:'Royal Enfield',  count:3,  color:'#c8864a',
     img:'RE.png' },
-  { id:'suzuki',        label:'Suzuki',         count:2,  color:'#00c864',
-    img:'suzuki.png' },
-  { id:'bajaj',         label:'Bajaj',          count:2,  color:'#ff6060',
-    img:'platina.png' },
 ];
 
 const BIKE_IMGS = {
@@ -1104,7 +1079,7 @@ window.addEventListener('load',()=>{
 });
 
 /* ── TICKER ── */
-const TICK_ITEMS = ['KSR Air Filter','Beyond Air','Built for Riders','99% Filtration','Triple Layer Media','Pan-India Delivery','Washable & Reusable','Performance Engineered'];
+const TICK_ITEMS = ['KSR Air Filter','Beyond Air','Built for Riders','99% Filtration','Triple Layer Media','Pan-India Delivery','Performance Engineered'];
 const ti = document.getElementById('tickerInner');
 const tHtml = [...TICK_ITEMS,...TICK_ITEMS].map(t=>`<span class="ti">${t}<span class="ti-sep"> ◆ </span></span>`).join('');
 ti.innerHTML = tHtml + tHtml;
